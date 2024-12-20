@@ -1,0 +1,91 @@
+/* .bg_img {
+    background: url(./landscape_fantasy_art_digital_dragon_Kingdom-1785875.jpg!d)center, cover;
+    height: 100vh;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #25291d;
+}
+
+.container {
+    text-align: center;
+}
+
+.image {
+    height: 480px;
+    width: 1000px;
+}
+
+#image {
+    height: 480px;
+    width: 1000px;
+}
+
+.vaxt {
+    font-size: 30px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.hidden {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes heartRain {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.heart {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    animation: heartRain 5s linear infinite alternate;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    animation: heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0% {
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        transform: translateY(110vh);
+    }
+}
